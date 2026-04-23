@@ -1,7 +1,6 @@
-# 🔐 MISP Automated Intelligence Pipeline
+🔐 MISP Automated Intelligence Pipeline
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/your-username/MISP-Automated-Intelligence-Pipeline?style=for-the-badge&color=blue" alt="License">
   <img src="https://img.shields.io/badge/Python-3.8%2B-yellow?style=for-the-badge&logo=python" alt="Python Version">
   <img src="https://img.shields.io/badge/MISP-Integration-green?style=for-the-badge&logo=misp" alt="MISP">
   <img src="https://img.shields.io/badge/Security-OSINT-red?style=for-the-badge" alt="Security OSINT">
@@ -20,10 +19,10 @@
 
 ## 🎯 Key Objectives
 
-- 🤖 **Automate** ingestion from world-class threat sources.
-- 🧹 **Cleanse** data through MD5-based deduplication.
-- 🧠 **Prioritize** intelligence with keyword-based scoring.
-- 🏷️ **Contextualize** with automated TLP and Source tagging.
+* 🤖 **Automate** ingestion from world-class threat sources.
+* 🧹 **Cleanse** data through MD5-based deduplication.
+* 🧠 **Prioritize** intelligence with keyword-based scoring.
+* 🏷️ **Contextualize** with automated TLP and Source tagging.
 
 ---
 
@@ -47,6 +46,7 @@ The script analyzes titles and descriptions to assign a priority score:
 ---
 
 ## 🏗️ Workflow
+
 ```mermaid
 graph LR
     A[External Feeds] --> B(Processing)
@@ -61,7 +61,8 @@ Plaintext
 ├── requirements.txt   # Dependencies
 ├── .env               # Private configuration (DO NOT COMMIT)
 ├── .gitignore         # Prevents credential leaks
-└── LICENSE            # Project usage rights
+├── LICENSE            # Project usage rights
+└── README.md          # Documentation
 🚀 Getting Started
 1️⃣ Installation
 Bash
@@ -100,3 +101,7 @@ Credential Safety: Always ensure .env is inside your .gitignore.
 TLP Compliance: Defaulting to TLP:WHITE for public OSINT data.
 
 SSL: Disable VERIFY_SSL only in trusted lab environments.
+
+<p align="center">
+<i>Developed for Automated Cybersecurity Operations</i>
+</p>
