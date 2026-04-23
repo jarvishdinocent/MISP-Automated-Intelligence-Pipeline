@@ -92,7 +92,7 @@ External Feeds → Processing → Deduplication → Scoring → MISP Event Creat
 
 | Component | Value                  |
 | --------- | ---------------------- |
-| MISP URL  | https://192.168.210.38 |
+| MISP URL  | https://localhost:443 |
 | Script    | unified_feeds.py       |
 
 ---
