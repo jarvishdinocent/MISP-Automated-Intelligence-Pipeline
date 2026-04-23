@@ -1,1 +1,15 @@
-.gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Env
+venv/
+.env
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
