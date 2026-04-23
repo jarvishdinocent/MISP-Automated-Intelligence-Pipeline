@@ -47,7 +47,6 @@ The script analyzes titles and descriptions to assign a priority score:
 
 ## 🏗️ Workflow
 
-```mermaid
 graph LR
     A[External Feeds] --> B(Processing)
     B --> C{Deduplication}
