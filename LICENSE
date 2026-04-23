@@ -1,12 +1,6 @@
 
----
+MIT License
 
-## 🔼 6. Upload Code (CLI method)
+Copyright (c) 2026
 
-```bash
-git init
-git add .
-git commit -m "Initial commit - MISP ingestion framework"
-git branch -M main
-git remote add origin https://github.com/your-username/misp-threat-intel-ingestion.git
-git push -u origin main
+Permission is hereby granted...
