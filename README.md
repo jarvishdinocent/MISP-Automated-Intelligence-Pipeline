@@ -63,15 +63,15 @@ External Feeds → Processing → Deduplication → Scoring → MISP Event Creat
 1️⃣ Installation
 
 # Clone the repository
-* git clone 
+* git clone https://github.com/jarvishdinocent/MISP-Automated-Intelligence-Pipeline.git
 * cd MISP-Automated-Intelligence-Pipeline
 
 # Setup virtual environment
-python3 -m venv venv
-source venv/bin/activate
+* python3 -m venv venv
+* source venv/bin/activate
 
 # Install requirements
-pip install -r requirements.txt
+* pip install -r requirements.txt
 
 2️⃣ Configuration
 
