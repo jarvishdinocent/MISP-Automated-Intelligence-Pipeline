@@ -50,13 +50,13 @@ The script analyzes titles and descriptions to assign a priority score:
 External Feeds → Processing → Deduplication → Scoring → MISP Event Creation
 
 ## 📂 Project Structure
-.
-├── unified_feeds.py   # Main logic & feed handlers
-├── requirements.txt   # Dependencies
-├── .env               # Private configuration (DO NOT COMMIT)
-├── .gitignore         # Prevents credential leaks
-├── LICENSE            # Project usage rights
-└── README.md          # Documentation
+
+    ├── unified_feeds.py # Main logic & feed handlers
+    ├── requirements.txt # Dependencies
+    ├── .env             # Private configuration
+    └── .gitignore       # Prevents credential leaks
+    ├── LICENSE            # Project usage rights
+    ├── README.md          # Documentation
 
 ## 🚀 Getting Started
 
