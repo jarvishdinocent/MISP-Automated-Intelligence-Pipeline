@@ -47,12 +47,7 @@ The script analyzes titles and descriptions to assign a priority score:
 
 ## 🏗️ Workflow
 
-graph LR
-    A[External Feeds] --> B(Processing)
-    B --> C{Deduplication}
-    C -->|New| D[Scoring Engine]
-    D --> E[MISP Event Creation]
-    C -->|Duplicate| F[Skip]
+External Feeds → Processing → Deduplication → Scoring → MISP Event Creation
 
 ## 📂 Project Structure
 .
