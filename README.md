@@ -83,11 +83,32 @@ VERIFY_SSL=False
 3️⃣ Execution
 python3 unified_feeds.py
 
-## 📈 Output Examples
-When executed, the script creates structured events in MISP:
+## 📈 Output
 
-Attributes: Automatically detects vulnerability (CVE) vs link.
+The script will:
 
+Create MISP events per feed
+Populate attributes:
+CVE IDs (KEV)
+Advisory links (RSS feeds)
+Apply intelligence scores in comments
+Attach contextual tags
+Prevent duplicate entries
+⚠️ Known Limitations
+Deduplication is per execution, not persistent
+Scoring is keyword-based (basic)
+Some feeds may return HTTP errors (e.g., 403/timeout)
+No MITRE ATT&CK mapping (yet)
+🔐 Security Considerations
+Do NOT expose API keys publicly
+Use environment variables for production
+Disable SSL verification only in trusted environments
+🚀 Future Improvements
+Persistent deduplication (database/file-based)
+Advanced scoring model
+Proxy support for restricted feeds
+MITRE ATT&CK enrichment
+Logging to file
 Comments: Includes the specific feed source and calculated score.
 
 Tags: Applied osint, tlp:white, and source:<name>.
