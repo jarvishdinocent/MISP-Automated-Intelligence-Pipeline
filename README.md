@@ -94,21 +94,21 @@ Advisory links (RSS feeds)
 Apply intelligence scores in comments
 Attach contextual tags
 Prevent duplicate entries
-⚠️ Known Limitations
+
+## ⚠️ Known Limitations
 Deduplication is per execution, not persistent
 Scoring is keyword-based (basic)
 Some feeds may return HTTP errors (e.g., 403/timeout)
 No MITRE ATT&CK mapping (yet)
-🔐 Security Considerations
+
+## 🔐 Security Considerations
 Do NOT expose API keys publicly
 Use environment variables for production
 Disable SSL verification only in trusted environments
-🚀 Future Improvements
+
+## 🚀 Future Improvements
 Persistent deduplication (database/file-based)
 Advanced scoring model
 Proxy support for restricted feeds
 MITRE ATT&CK enrichment
 Logging to file
-Comments: Includes the specific feed source and calculated score.
-
-Tags: Applied osint, tlp:white, and source:<name>.
