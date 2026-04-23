@@ -1,4 +1,4 @@
-🔐 MISP Automated Intelligence Pipeline
+# 🔐 MISP Automated Intelligence Pipeline
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-yellow?style=for-the-badge&logo=python" alt="Python Version">
@@ -54,8 +54,8 @@ graph LR
     C -->|New| D[Scoring Engine]
     D --> E[MISP Event Creation]
     C -->|Duplicate| F[Skip]
-📂 Project Structure
-Plaintext
+
+## 📂 Project Structure
 .
 ├── unified_feeds.py   # Main logic & feed handlers
 ├── requirements.txt   # Dependencies
@@ -63,9 +63,11 @@ Plaintext
 ├── .gitignore         # Prevents credential leaks
 ├── LICENSE            # Project usage rights
 └── README.md          # Documentation
-🚀 Getting Started
+
+## 🚀 Getting Started
+
 1️⃣ Installation
-Bash
+
 # Clone the repository
 git clone [https://github.com/your-username/MISP-Automated-Intelligence-Pipeline.git](https://github.com/your-username/MISP-Automated-Intelligence-Pipeline.git)
 cd MISP-Automated-Intelligence-Pipeline
@@ -76,17 +78,18 @@ source venv/bin/activate
 
 # Install requirements
 pip install -r requirements.txt
-2️⃣ Configuration
-Create a .env file in the root directory:
 
-Ini, TOML
+2️⃣ Configuration
+
+Create a .env file in the root directory:
 MISP_URL="https://your-misp-instance"
 MISP_KEY="your-api-key"
 VERIFY_SSL=False
+
 3️⃣ Execution
-Bash
 python3 unified_feeds.py
-📈 Output Examples
+
+## 📈 Output Examples
 When executed, the script creates structured events in MISP:
 
 Attributes: Automatically detects vulnerability (CVE) vs link.
@@ -94,14 +97,3 @@ Attributes: Automatically detects vulnerability (CVE) vs link.
 Comments: Includes the specific feed source and calculated score.
 
 Tags: Applied osint, tlp:white, and source:<name>.
-
-🔐 Security Considerations
-Credential Safety: Always ensure .env is inside your .gitignore.
-
-TLP Compliance: Defaulting to TLP:WHITE for public OSINT data.
-
-SSL: Disable VERIFY_SSL only in trusted lab environments.
-
-<p align="center">
-<i>Developed for Automated Cybersecurity Operations</i>
-</p>
